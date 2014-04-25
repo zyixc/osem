@@ -66,7 +66,7 @@ class Conference < ActiveRecord::Base
   before_create :create_email_settings
 
   def self.media_types
-    media_types = {:youtube => 'YouTube', :slideshare => 'SlideShare',  :flickr => 'Flickr', :vimeo => 'Vimeo', :speakerdeck => 'Speakerdeck', :instagram => 'Instagram'}
+    media_types = {:youtube => 'YouTube', :slideshare => 'SlideShare',  :flickr => 'Flickr', :vimeo => 'Vimeo', :speakerdeck => 'Speakerdeck', :instagram => 'Instagram', :bambuser => 'bambuser'}
     return media_types
   end
 
